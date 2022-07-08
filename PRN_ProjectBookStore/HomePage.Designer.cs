@@ -33,14 +33,13 @@
             this.btMyCart = new System.Windows.Forms.Button();
             this.btAllProducts = new System.Windows.Forms.Button();
             this.btSignUp = new System.Windows.Forms.Button();
-            this.btSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PRN_ProjectBookStore.Properties.Resources.anh_sach_800x451;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 216);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(799, 451);
             this.pictureBox1.TabIndex = 0;
@@ -50,7 +49,7 @@
             // 
             this.btSignIn.BackColor = System.Drawing.SystemColors.Control;
             this.btSignIn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btSignIn.Location = new System.Drawing.Point(842, 128);
+            this.btSignIn.Location = new System.Drawing.Point(901, 231);
             this.btSignIn.Name = "btSignIn";
             this.btSignIn.Size = new System.Drawing.Size(120, 50);
             this.btSignIn.TabIndex = 1;
@@ -64,7 +63,7 @@
             this.btMyCart.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btMyCart.Image = global::PRN_ProjectBookStore.Properties.Resources.giohang;
             this.btMyCart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btMyCart.Location = new System.Drawing.Point(1025, 128);
+            this.btMyCart.Location = new System.Drawing.Point(1098, 231);
             this.btMyCart.Name = "btMyCart";
             this.btMyCart.Size = new System.Drawing.Size(120, 50);
             this.btMyCart.TabIndex = 2;
@@ -76,18 +75,19 @@
             // 
             this.btAllProducts.BackColor = System.Drawing.SystemColors.Control;
             this.btAllProducts.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btAllProducts.Location = new System.Drawing.Point(916, 249);
+            this.btAllProducts.Location = new System.Drawing.Point(977, 347);
             this.btAllProducts.Name = "btAllProducts";
             this.btAllProducts.Size = new System.Drawing.Size(163, 50);
             this.btAllProducts.TabIndex = 3;
             this.btAllProducts.Text = "All Products";
             this.btAllProducts.UseVisualStyleBackColor = false;
+            this.btAllProducts.Click += new System.EventHandler(this.btAllProducts_Click);
             // 
             // btSignUp
             // 
             this.btSignUp.BackColor = System.Drawing.SystemColors.Control;
             this.btSignUp.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btSignUp.Location = new System.Drawing.Point(939, 369);
+            this.btSignUp.Location = new System.Drawing.Point(1000, 473);
             this.btSignUp.Name = "btSignUp";
             this.btSignUp.Size = new System.Drawing.Size(120, 50);
             this.btSignUp.TabIndex = 4;
@@ -95,23 +95,11 @@
             this.btSignUp.UseVisualStyleBackColor = false;
             this.btSignUp.Click += new System.EventHandler(this.btSignUp_Click);
             // 
-            // btSearch
-            // 
-            this.btSearch.BackColor = System.Drawing.SystemColors.Control;
-            this.btSearch.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btSearch.Location = new System.Drawing.Point(12, 538);
-            this.btSearch.Name = "btSearch";
-            this.btSearch.Size = new System.Drawing.Size(120, 50);
-            this.btSearch.TabIndex = 5;
-            this.btSearch.Text = "Search";
-            this.btSearch.UseVisualStyleBackColor = false;
-            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1182, 703);
-            this.Controls.Add(this.btSearch);
+            this.ClientSize = new System.Drawing.Size(1282, 753);
             this.Controls.Add(this.btSignUp);
             this.Controls.Add(this.btAllProducts);
             this.Controls.Add(this.btMyCart);
@@ -131,6 +119,5 @@
         private System.Windows.Forms.Button btMyCart;
         private System.Windows.Forms.Button btAllProducts;
         private System.Windows.Forms.Button btSignUp;
-        private System.Windows.Forms.Button btSearch;
     }
 }

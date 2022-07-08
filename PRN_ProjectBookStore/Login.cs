@@ -39,7 +39,16 @@ namespace PRN_ProjectBookStore
 
         private void button2_Click(object sender, EventArgs e)
         {
+            SignUp su = new SignUp();
+            this.Hide();
+            su.Show();
+        }
 
+        private void btHomePage_Click(object sender, EventArgs e)
+        {
+            HomePage homePage = new HomePage();
+            this.Hide();
+            homePage.Show();
         }
     }
 }

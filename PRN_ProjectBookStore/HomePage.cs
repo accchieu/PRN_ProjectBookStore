@@ -30,5 +30,12 @@ namespace PRN_ProjectBookStore
             signUp.Show();
             signUp.Hide();
         }
+
+        private void btAllProducts_Click(object sender, EventArgs e)
+        {
+            Products products = new Products();
+            products.Hide();
+            products.Show();
+        }
     }
 }

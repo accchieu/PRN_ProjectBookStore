@@ -35,6 +35,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btHomePage = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtPassword
@@ -53,7 +54,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(998, 463);
+            this.button2.Location = new System.Drawing.Point(809, 463);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(94, 29);
             this.button2.TabIndex = 12;
@@ -102,11 +103,22 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Login";
             // 
+            // btHomePage
+            // 
+            this.btHomePage.Location = new System.Drawing.Point(365, 463);
+            this.btHomePage.Name = "btHomePage";
+            this.btHomePage.Size = new System.Drawing.Size(94, 29);
+            this.btHomePage.TabIndex = 15;
+            this.btHomePage.Text = "Home Page";
+            this.btHomePage.UseVisualStyleBackColor = true;
+            this.btHomePage.Click += new System.EventHandler(this.btHomePage_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 703);
+            this.Controls.Add(this.btHomePage);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.button2);
@@ -130,5 +142,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btHomePage;
     }
 }
