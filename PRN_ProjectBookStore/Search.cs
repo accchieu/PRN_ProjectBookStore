@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PRN_ProjectBookStore
 {
-    public partial class Products : Form
+    public partial class Search : Form
     {
-        public Products()
+        public Search()
         {
             InitializeComponent();
         }
