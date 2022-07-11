@@ -47,7 +47,7 @@ namespace PRN_ProjectBookStore
         private void tbsbPrice_KeyUp(object sender, KeyEventArgs e)
         {
             var lp = (from p in context.Products where p.Price == Convert.ToDouble(tbsbPrice.Text) select p).ToList();
-            dataGridView1.DataSource = lp;
+            dataGridView1.DataSource = lp;//themsbp
         }
     }
 }
