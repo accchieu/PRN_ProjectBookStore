@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PRN_ProjectBookStore.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,24 +20,33 @@ namespace PRN_ProjectBookStore
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             string Username = txtUsername.Text.Trim();
             string Password = txtPassword.Text.Trim();
             HomePage main = new HomePage();
-            if (Username == string.Empty)
+            PRN_BookStoreContext context = new PRN_BookStoreContext();
+            if (Username == string.Empty && Password == string.Empty)
             {
-                MessageBox.Show("Username not emty!");
+                MessageBox.Show("try again");
             }
-            if (Password == string.Empty)
+            var existUser = context.Accounts.FirstOrDefault(x => x.Username.Equals(txtUsername.Text));
+            if (existUser != null)
             {
-                MessageBox.Show("Password not emty!");
+                if (Username == txtUsername.Text && Password == txtPassword.Text)
+                {
+                    this.Hide();
+                    main.Show();
+                }
+                else
+                {
+                    MessageBox.Show("User name or password mismath");
+                }
             }
-            if (Username == txtUsername.Text && Password == txtPassword.Text)
+            else
             {
-                this.Hide();
-                main.Show();
+                MessageBox.Show("User not found");
             }
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             SignUp su = new SignUp();
@@ -49,6 +59,11 @@ namespace PRN_ProjectBookStore
             HomePage homePage = new HomePage();
             this.Hide();
             homePage.Show();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

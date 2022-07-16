@@ -33,9 +33,14 @@ namespace PRN_ProjectBookStore
 
         private void btAllProducts_Click(object sender, EventArgs e)
         {
-            Products products = new Products();
-            products.Hide();
-            products.Show();
+            Products p = new Products();
+            p.Show();
+            
+            
+        }
+
+        private void HomePage_Load(object sender, EventArgs e)
+        {
             
         }
     }

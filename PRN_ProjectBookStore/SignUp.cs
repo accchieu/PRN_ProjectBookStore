@@ -82,5 +82,10 @@ namespace PRN_ProjectBookStore
             login.Hide();
             login.Show();
         }
+
+        private void SignUp_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
