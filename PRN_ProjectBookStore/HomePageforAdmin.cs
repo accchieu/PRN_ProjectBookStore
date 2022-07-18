@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PRN_ProjectBookStore
 {
-    public partial class HomePage : Form
+    public partial class HomePageforAdmin : Form
     {
-        public HomePage()
+        public HomePageforAdmin()
         {
             InitializeComponent();
         }
@@ -20,22 +20,23 @@ namespace PRN_ProjectBookStore
         private void btSignIn_Click(object sender, EventArgs e)
         {
             Login login = new Login();
-            login.Hide();
             login.Show();
+            this.Hide();
+            
         }
 
         private void btSignUp_Click(object sender, EventArgs e)
         {
             SignUp signUp = new SignUp();
             signUp.Show();
-            this.Hide();
+            signUp.Hide();
         }
 
         private void btAllProducts_Click(object sender, EventArgs e)
         {
-            Products p = new Products();
+            ProductForAdmin p = new ProductForAdmin();
             p.Show();
-            
+            this.Hide();
             
         }
 

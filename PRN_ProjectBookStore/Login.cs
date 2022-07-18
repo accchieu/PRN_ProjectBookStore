@@ -23,31 +23,70 @@ namespace PRN_ProjectBookStore
 
             string Username = txtUsername.Text.Trim();
             string Password = txtPassword.Text.Trim();
-            HomePage main = new HomePage();
+            
             PRN_BookStoreContext context = new PRN_BookStoreContext();
             if (Username == string.Empty && Password == string.Empty)
             {
                 MessageBox.Show("try again");
             }
+
             var existUser = context.Accounts.FirstOrDefault(x => x.Username.Equals(txtUsername.Text));
-            if (existUser != null)
-            {
-                if (Username == txtUsername.Text && Password == txtPassword.Text)
+                if (existUser != null && Username == "admin")
                 {
-                    this.Hide();
-                    main.Show();
-                }
-                else
-                {
-                    MessageBox.Show("User name or password mismath");
-                }
+                    if (Username == txtUsername.Text && Password == txtPassword.Text)
+                    {
+                        if (existUser.Password.Equals(txtPassword.Text))
+                        {
+                            HomePageforAdmin mainAdmin = new HomePageforAdmin();
+                            this.Hide();
+                            mainAdmin.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("wrong password");
+                        }
+
+
+                    }
+
+
             }
             else
             {
-                MessageBox.Show("User not found");
+                if (existUser != null)
+                {
+
+
+                    if (Username == txtUsername.Text && Password == txtPassword.Text)
+                    {
+                        if (existUser.Username.Equals(txtUsername.Text) && existUser.Password.Equals(txtPassword.Text))
+                        {
+                            HomePageForUser mainUser = new HomePageForUser();
+                            this.Hide();
+                            mainUser.Show();
+
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("Password or Username are wrong");
+                        }
+
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Password or Username don't exist");
+                }
             }
-        }
-        private void button2_Click(object sender, EventArgs e)
+     
+            }
+                
+        
+            
+
+           
+        private void button2_Click(object sender, EventArgs e) //signUp
         {
             SignUp su = new SignUp();
             this.Hide();
@@ -56,7 +95,7 @@ namespace PRN_ProjectBookStore
 
         private void btHomePage_Click(object sender, EventArgs e)
         {
-            HomePage homePage = new HomePage();
+            HomePageforAdmin homePage = new HomePageforAdmin();
             this.Hide();
             homePage.Show();
         }

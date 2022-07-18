@@ -1,6 +1,6 @@
 ﻿namespace PRN_ProjectBookStore
 {
-    partial class HomePage
+    partial class HomePageforAdmin
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,6 @@
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btSignIn = new System.Windows.Forms.Button();
-            this.btMyCart = new System.Windows.Forms.Button();
             this.btAllProducts = new System.Windows.Forms.Button();
             this.btSignUp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -49,7 +48,7 @@
             // 
             this.btSignIn.BackColor = System.Drawing.SystemColors.Control;
             this.btSignIn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btSignIn.Location = new System.Drawing.Point(901, 231);
+            this.btSignIn.Location = new System.Drawing.Point(881, 257);
             this.btSignIn.Name = "btSignIn";
             this.btSignIn.Size = new System.Drawing.Size(120, 50);
             this.btSignIn.TabIndex = 1;
@@ -57,25 +56,11 @@
             this.btSignIn.UseVisualStyleBackColor = false;
             this.btSignIn.Click += new System.EventHandler(this.btSignIn_Click);
             // 
-            // btMyCart
-            // 
-            this.btMyCart.BackColor = System.Drawing.SystemColors.Control;
-            this.btMyCart.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btMyCart.Image = global::PRN_ProjectBookStore.Properties.Resources.giohang;
-            this.btMyCart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btMyCart.Location = new System.Drawing.Point(1098, 231);
-            this.btMyCart.Name = "btMyCart";
-            this.btMyCart.Size = new System.Drawing.Size(120, 50);
-            this.btMyCart.TabIndex = 2;
-            this.btMyCart.Text = "My Cart";
-            this.btMyCart.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btMyCart.UseVisualStyleBackColor = false;
-            // 
             // btAllProducts
             // 
             this.btAllProducts.BackColor = System.Drawing.SystemColors.Control;
             this.btAllProducts.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btAllProducts.Location = new System.Drawing.Point(977, 347);
+            this.btAllProducts.Location = new System.Drawing.Point(961, 362);
             this.btAllProducts.Name = "btAllProducts";
             this.btAllProducts.Size = new System.Drawing.Size(163, 50);
             this.btAllProducts.TabIndex = 3;
@@ -87,7 +72,7 @@
             // 
             this.btSignUp.BackColor = System.Drawing.SystemColors.Control;
             this.btSignUp.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btSignUp.Location = new System.Drawing.Point(1000, 473);
+            this.btSignUp.Location = new System.Drawing.Point(1095, 257);
             this.btSignUp.Name = "btSignUp";
             this.btSignUp.Size = new System.Drawing.Size(120, 50);
             this.btSignUp.TabIndex = 4;
@@ -95,17 +80,16 @@
             this.btSignUp.UseVisualStyleBackColor = false;
             this.btSignUp.Click += new System.EventHandler(this.btSignUp_Click);
             // 
-            // HomePage
+            // HomePageforAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1282, 753);
             this.Controls.Add(this.btSignUp);
             this.Controls.Add(this.btAllProducts);
-            this.Controls.Add(this.btMyCart);
             this.Controls.Add(this.btSignIn);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "HomePage";
+            this.Name = "HomePageforAdmin";
             this.Text = "HomePage";
             this.Load += new System.EventHandler(this.HomePage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -117,7 +101,6 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btSignIn;
-        private System.Windows.Forms.Button btMyCart;
         private System.Windows.Forms.Button btAllProducts;
         private System.Windows.Forms.Button btSignUp;
     }

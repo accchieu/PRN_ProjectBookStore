@@ -12,11 +12,11 @@ using System.Windows.Forms;
 
 namespace PRN_ProjectBookStore
 {
-    public partial class Products : Form
+    public partial class ProductForAdmin : Form
     {
         List<Product> listP = new List<Product>();
         PRN_BookStoreContext context = new PRN_BookStoreContext();
-        public Products()
+        public ProductForAdmin()
         {
             InitializeComponent();
         }
