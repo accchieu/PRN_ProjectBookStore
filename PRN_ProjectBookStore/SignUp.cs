@@ -37,7 +37,7 @@ namespace PRN_ProjectBookStore
             string address = tbAddress.Text.Trim();
             string password = tbPassword.Text.Trim();
             string repassword = tbRePassword.Text.Trim();
-            if (checkAccount(username))
+            if (!checkAccount(username))
             {
                 MessageBox.Show("username long time to 6-24 charater");
                 return;

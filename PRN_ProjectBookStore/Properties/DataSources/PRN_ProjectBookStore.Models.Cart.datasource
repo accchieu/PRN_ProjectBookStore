@@ -5,6 +5,6 @@
     Renaming the file extension or editing the content of this file may   
     cause the file to be unrecognizable by the program.
 -->
-<GenericObjectDataSource DisplayName="Product" Version="1.0" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
-  <TypeInfo>PRN_ProjectBookStore.Models.Product, PRN_ProjectBookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</TypeInfo>
+<GenericObjectDataSource DisplayName="Cart" Version="1.0" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+  <TypeInfo>PRN_ProjectBookStore.Models.Cart, PRN_ProjectBookStore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</TypeInfo>
 </GenericObjectDataSource>

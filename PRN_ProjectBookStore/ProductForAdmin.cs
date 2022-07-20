@@ -46,8 +46,16 @@ namespace PRN_ProjectBookStore
         }
         private void tbsbPID_KeyUp(object sender, KeyEventArgs e)
         {
-            var lp = (from p in context.Products where p.Pid == tbsbPID.Text.ToLower() select p).ToList();
-            dataGridView1.DataSource = lp;
+            if (tbsbPID.Text == "")
+            {
+                var lp = (from p in context.Products select p).ToList();
+                dataGridView1.DataSource = lp;
+            }
+            else
+            {
+                var lp = (from p in context.Products where p.Pid == tbsbPID.Text.ToLower() select p).ToList();
+                dataGridView1.DataSource = lp;
+            }
         }
 
         private void btAdd_Click(object sender, EventArgs e)
@@ -146,6 +154,11 @@ namespace PRN_ProjectBookStore
                 ResetValue();
                 tbPid.Enabled = true;
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
 
 

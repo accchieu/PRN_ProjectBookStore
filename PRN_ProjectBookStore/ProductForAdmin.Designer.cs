@@ -110,6 +110,7 @@
             this.dataGridView1.Size = new System.Drawing.Size(803, 547);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // pidDataGridViewTextBoxColumn
             // 
@@ -331,7 +332,7 @@
             this.label1.TabIndex = 24;
             this.label1.Text = "CatId";
             // 
-            // Products
+            // ProductForAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -356,7 +357,7 @@
             this.Controls.Add(this.btUpdate);
             this.Controls.Add(this.btAdd);
             this.Controls.Add(this.lbsbName);
-            this.Name = "Products";
+            this.Name = "ProductForAdmin";
             this.Text = "Products";
             this.Load += new System.EventHandler(this.Products_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

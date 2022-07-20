@@ -68,7 +68,7 @@
             this.btSignInUser.Name = "btSignInUser";
             this.btSignInUser.Size = new System.Drawing.Size(120, 50);
             this.btSignInUser.TabIndex = 6;
-            this.btSignInUser.Text = "Sign In";
+            this.btSignInUser.Text = "LogOut";
             this.btSignInUser.UseVisualStyleBackColor = false;
             this.btSignInUser.Click += new System.EventHandler(this.btSignInUser_Click);
             // 
@@ -94,6 +94,7 @@
             this.btMyCart.Text = "My Cart";
             this.btMyCart.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btMyCart.UseVisualStyleBackColor = false;
+            this.btMyCart.Click += new System.EventHandler(this.btMyCart_Click);
             // 
             // HomePageForUser
             // 

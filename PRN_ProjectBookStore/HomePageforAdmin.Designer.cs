@@ -52,7 +52,7 @@
             this.btSignIn.Name = "btSignIn";
             this.btSignIn.Size = new System.Drawing.Size(120, 50);
             this.btSignIn.TabIndex = 1;
-            this.btSignIn.Text = "Sign In";
+            this.btSignIn.Text = "LogOut";
             this.btSignIn.UseVisualStyleBackColor = false;
             this.btSignIn.Click += new System.EventHandler(this.btSignIn_Click);
             // 
